@@ -43,9 +43,9 @@ func (g *Game) Layout(outsideWidth, outsideHeight int) (int, int) {
 }
 
 func main() {
+
 	board := game.NewBoard()
 	g := &Game{board: board}
-
 	ebiten.SetWindowSize(screenWidth, screenHeight)
 	ebiten.SetWindowTitle("Chess Application")
 	if err := ebiten.RunGame(g); err != nil {
